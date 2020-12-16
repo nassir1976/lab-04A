@@ -1,5 +1,5 @@
 # Overview
-In lab 1, you built a web page where each box of content was rendered with a unique color in desktop view and in mobile view. You will be completing this assignment again, using either Flexbox or CSS grids for styling.
+**In lab 1**, you built a web page where each box of content was rendered with a unique color in desktop view and in mobile view. You will be completing this assignment again, using either Flexbox or CSS grids for styling.
 
 # lab-04A
 
