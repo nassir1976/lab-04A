@@ -11,15 +11,17 @@
     height: 700px;
     
     grid-template-columns:20.83% 19.79% 19.79% 19.79% 19.79%;
-    grid-template-rows: 14.29% 28.57% 35.71% 21.43%;
+    grid-template-rows: 14.287% 28.572% 35.715% 21.43%;
      grid-template-areas: 
     "A A A A A"
     "B C C D D" 
     "B E F G H"
     "B I I I I"; 
-    grid-gap: 0.1rem, 
+
+    grid-row:  0.2em; 
+    
    }
-   
+ 
     
      
   #a{
@@ -37,7 +39,7 @@
     
   }
   #c{
-   background-color:darkblue;
+   background-color:purple;
    grid-area: C;
    text-align: center;
   line-height: 200px;
@@ -78,14 +80,101 @@
    background-color:saddlebrown;
    grid-area: I;
    text-align: center;
-    line-height: 150px;
+   line-height: 150px;
   } 
-    }   
-    /* tablet */
-@media only screen and(max-width:768px){
+    }  
+  /* tablet screen  */  
+    
+
+    @media(max-width:768px){
+      body{
+        
+        margin: auto;
+       }
+       .container{
+        display: grid;
+        height: 1055px;
+        
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 1fr 1fr 0.6fr 0.5fr 0.5fr .32fr 0.3fr ;
+        grid-template-areas:
+        "A A"
+        "B B" 
+        "C C"
+        "D D"
+        "E F" 
+        "G H"
+        "I I"; 
+       
+        grid-gap:0.2rem;
+      }
+       #a{
+         background-color:aqua ;
+         grid-area:A;
+         text-align: center;
+        line-height:75px;
+       }
+        #b{ 
+         background-color:aquamarine ;
+         grid-area: B;
+         line-height: 150px;
+         text-align: center
+       }
+       #c{
+        background-color:cyan;
+        grid-area:C;
+        text-align: center;
+         line-height: 125px;
+       }
+       #d{
+         background-color:darkturquoise;
+         grid-area:D;
+         text-align: center;
+         line-height: 125px;
+        }
+       #e{
+         background-color:lightblue;
+         grid-area:E;
+         text-align: center;
+         line-height: 250px;
+        }
+       #f{
+        background-color:lightskyblue;
+        grid-area:F;
+        text-align: center;
+        line-height: 250px;
+        }
+       #g{
+        background-color:mediumturquoise;
+        grid-area:G;
+        text-align: center;
+        line-height: 250px;
+         }
+              
+        #h{
+        background-color:lightcyan;
+        grid-area:H;
+        text-align: center;
+        line-height: 250px;
+     
+        }
+        #i{
+        background-color:palegreen;
+        grid-area:I;
+        text-align: center;
+        line-height: 80px;
+       }
+                  
+      } 
+     /* phone */
+
+ @media(max-width:480px){
+  body{
+    margin: auto;
+  }
   .container{
     display: grid;
-    height: 100vh;
+    height: 1055px;
     
     grid-template-columns:1fr 1fr ;
     grid-template-rows: 1fr 1fr 0.6fr 0.5fr 0.5fr .32fr 0.3fr ;
@@ -97,101 +186,72 @@
     "E F" 
     "G H"
     "I I"; 
+   
+    grid-gap: 0.2rem;
   }
   #a{
-    background-color:aqua ;
-    height: 75px;
+    background-color:red ;
+    grid-area:A;
+    text-align: center;
+    line-height:75px;
+    
   }
-   #b{ 
-    background-color:aquamarine ;
-    height: 150px;
+  #b{
+    background-color:coral ;
+    grid-area: B;
+    line-height: 150px;
+    text-align: center;
+   
+    
   }
   #c{
-   background-color:cyan;
-   height: 125px;
+   background-color:darkgoldenrod;
+   grid-area: C;
+   text-align: center;
+   line-height: 125px;
+   
   }
   #d{
-    background-color:darkturquoise;
-    height: 125px;
+    background-color:darkred;
+    grid-area: D;
+    text-align: center;
+    line-height: 125px;
+    
    }
   #e{
-    background-color:lightblue;
-    height: 250px;
+    background-color:indianred;
+    grid-area: E;
+    text-align: center;
+    line-height: 250px;
+    
    }
   #f{
-   background-color:lightskyblue;
-   height:250px
-   }
+   background-color:maroon;
+   grid-area: F;
+   text-align: center;
+   line-height: 250px;
+  }
   #g{
-   background-color:mediumturquoise;
-   height: 250px;
+   background-color:lightcoral;
+   grid-area: G;
+   text-align: center;
+   line-height: 250px;
+   
     }
          
    #h{
-   background-color:lightcyan;
-   height: 250px;
+   background-color:mediumvioletred;
+   grid-area: H;
+   text-align: center;
+   line-height: 250px;
+   
    }
    #i{
-   background-color:palegreen;
-   height: 250px;
+   background-color:saddlebrown;
+   grid-area: I;
+   text-align: center;
+   line-height: 80px;
+   ;
   }
-             
+  } 
   
-}
-  /* cellphone */
-@media only screen and(max-width:480px){
-  .container{
-    display: grid;
-    
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 1fr 0.6fr 0.5fr 0.5fr .32fr 0.3fr ;
-    grid-template-areas:
-    "A A"
-    "B B" 
-    "C C"
-    "D D"
-    "E F" 
-    "G H"
-    "I I"; 
-  }
-    #a{
-      background-color:red ;
-      grid-area:A;
-      
-    }
-    #b{
-      background-color:coral ;
-      grid-area: B;
-      
-    }
-    #c{
-     background-color:darkgoldenrod;
-     grid-area: C;
-     
-    }
-    #d{
-      background-color:darkred;
-      grid-area: D;
-     }
-    #e{
-      background-color:indianred;
-      grid-area: E;
-     }
-    #f{
-     background-color:maroon;
-     grid-area: F;
-     }
-    #g{
-     background-color:lightcoral;
-     grid-area: G;
-      }
-           
-     #h{
-     background-color:mediumvioletred;
-     grid-area: H;
-     }
-     #i{
-     background-color:saddlebrown;
-     grid-area: I;
-     }
-}
