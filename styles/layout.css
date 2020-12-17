@@ -5,7 +5,7 @@
  @media(max-width:768px){
   body{
     
-  margin: auto;
+    margin: auto;
    }
    .container{
     display: grid;
